@@ -1,0 +1,26 @@
+results: {
+    "fieldCount":0,
+    "affectedRows":1,
+    "insertId":0,
+    "serverStatus":2,
+    "warningCount":0,
+    "message":"",
+    "protocol41":true,
+    "changedRows":0
+}
+
+error: {
+    "code":"ER_DUP_ENTRY",
+    "errno":1062,
+    "sqlMessage":"Duplicate entry 'X-Files9' for key 'PRIMARY'",
+    "sqlState":"23000",
+    "index":0,
+    "sql":"INSERT INTO movies SET `title` = 'X-Files9', `genre` = 'comady thriller', `director` = 'Tim Burton', `release_year` = 1998"
+}
+
+results: [
+    {"title":"Joker","genre":"psychological thriller","director":"Todd Phillips","release_year":2019},
+    {"title":"Joker1","genre":"psychological thriller","director":"Todd Phillips","release_year":2019},
+    {"title":"Joker2","genre":"psychological thriller","director":"Todd Phillips","release_year":2019}
+]
+
