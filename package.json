@@ -6,8 +6,10 @@
   "scripts": {
     "start": "node server.bundle.js",
     "build": "webpack",
-    "dev": "nodemon ./index.js localhost 4000"
+    "dev": "nodemon ./index.js localhost 4000",
+    "prod": "node index.js"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bbachi/react-nodejs-example.git"
