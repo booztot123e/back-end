@@ -4,7 +4,7 @@ var dbconfig = {
     host: "localhost",
     port: "3306",
     user: "devuser",
-    password: "2023",
+    password: "P@ssw0rd@2023",
     database: "moviedb",
   },
   production: {
