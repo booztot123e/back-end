@@ -3,8 +3,8 @@ var dbconfig = {
     //connectionLimit : 10,
     host: "localhost",
     port: "3306",
-    user: "devuser",
-    password: "P@ssw0rd@2023",
+    user: "root",
+    password: "",
     database: "moviedb",
   },
   production: {
