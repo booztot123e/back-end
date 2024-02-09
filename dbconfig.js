@@ -11,7 +11,7 @@ var dbconfig = {
     //connectionLimit : 10,
     host: "localhost",
     port: "3306",
-    user: "devuser",
+    user: "dbuser",
     password: "P@ssw0rd@2023",
     database: "moviedb",
   },
