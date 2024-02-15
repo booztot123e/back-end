@@ -24,6 +24,11 @@ const init = async () => {
     host: "0.0.0.0",
     routes: {
       cors: true,
+      //   cors: {
+      //     origin: ["Access-Control-Allow-Origin", "https://api.se-rmutl.net/"],
+      //     headers: ["Accept", "Content-Type"],
+      //     additionalHeaders: ["X-Requested-With"],
+      //   },
     },
   });
 
@@ -51,6 +56,21 @@ const init = async () => {
   server.auth.default("simple");
 
   //-------- AuthBearer -------
+  /*
+    server.route({
+        method: "GET",
+        path: "/",
+        config: {
+            cors: {
+                origin: ['*'],
+                additionalHeaders: ['cache-control', 'x-requested-width']
+            }
+        },
+        handler: () => {
+            return '<h3> Welcome to API Back-end Ver. 1.0.0</h3>';
+        }
+    });
+*/
 
   server.route({
     method: "GET",
