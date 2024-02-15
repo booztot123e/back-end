@@ -23,12 +23,7 @@ const init = async () => {
     port: api_port,
     host: "0.0.0.0",
     routes: {
-      //cors: true
-      cors: {
-        origin: ["Access-Control-Allow-Origin", "192.168.179.111:3000"],
-        headers: ["Accept", "Content-Type"],
-        additionalHeaders: ["X-Requested-With"],
-      },
+      cors: true,
     },
   });
 
@@ -56,21 +51,6 @@ const init = async () => {
   server.auth.default("simple");
 
   //-------- AuthBearer -------
-  /*
-    server.route({
-        method: "GET",
-        path: "/",
-        config: {
-            cors: {
-                origin: ['*'],
-                additionalHeaders: ['cache-control', 'x-requested-width']
-            }
-        },
-        handler: () => {
-            return '<h3> Welcome to API Back-end Ver. 1.0.0</h3>';
-        }
-    });
-*/
 
   server.route({
     method: "GET",
@@ -95,6 +75,7 @@ const init = async () => {
       cors: {
         origin: ["*"],
         additionalHeaders: ["cache-control", "x-requested-width"],
+        credentials: true,
       },
     },
     handler: async function (request, reply) {
@@ -123,6 +104,7 @@ const init = async () => {
       cors: {
         origin: ["*"],
         additionalHeaders: ["cache-control", "x-requested-width"],
+        credentials: true,
       },
     },
     handler: async function (request, reply) {
@@ -164,6 +146,7 @@ const init = async () => {
       cors: {
         origin: ["*"],
         additionalHeaders: ["cache-control", "x-requested-width"],
+        credentials: true,
       },
     },
     handler: async function (request, reply) {
